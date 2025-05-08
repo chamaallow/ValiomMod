@@ -1,0 +1,20 @@
+name: ValiomMOD
+main: com.valiom.mod.ValiomMod
+version: 1.0
+author: ValiomDev
+depend: [LuckPerms]
+commands:
+  valiomrank:
+    description: Modifier le grade d'un joueur via LuckPerms
+    usage: /valiomrank set <joueur> <grade>
+    permission: valiommod.rank.set
+  resetplayer:
+    description: Réinitialise complètement un joueur
+    usage: /resetplayer <pseudo>
+    permission: valiommod.command.resetplayer
+
+permissions:
+  valiommod.command.resetplayer:
+    description: Autorise l'utilisation de /resetplayer
+    default: op
+
